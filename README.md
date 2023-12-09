@@ -59,7 +59,7 @@ This project is licensed under the MIT License.
 
 ### Contact
 
-For any inquiries or feedback, feel free to reach out to Mohammed Badr at **mhmdbdr268115@gmail.com**.
+For any inquiries or feedback, feel free to reach out to Mohammed Badr at **mohammedbadr268@gmail.com**.
 
 ## Happy coding!
 
