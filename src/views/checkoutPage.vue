@@ -660,14 +660,6 @@ export default {
     },
     validateForm () {
       this.formvalidation = true
-      if (this.fname.val === '') {
-        this.fname.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.email.val === '') {
-        this.email.isvalid.emptyvalid = false
-        this.formvalidation = false
-      }
       if ((this.email.val).match(/\w+@gmail.com/) && this.email.val !== '') {
         this.email.isvalid.emailvalid = true
         this.email.isvalid.emptyvalid = true
@@ -684,33 +676,39 @@ export default {
         this.email.isvalid.emptyvalid = false
         this.formvalidation = false
       }
-      if (this.lname.val === '') {
-        this.lname.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.city.val === '') {
-        this.city.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.gover.val === '') {
-        this.gover.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.phone.val === '') {
-        this.phone.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.postalcode.val === '') {
-        this.postalcode.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.address.val === '') {
-        this.address.isvalid = false
-        this.formvalidation = false
-      }
-      if (this.country.val === '') {
-        this.country.isvalid = false
-        this.formvalidation = false
+      if (this.delivery === 'ship') {
+        if (this.fname.val === '') {
+          this.fname.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.lname.val === '') {
+          this.lname.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.city.val === '') {
+          this.city.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.gover.val === '') {
+          this.gover.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.phone.val === '') {
+          this.phone.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.postalcode.val === '') {
+          this.postalcode.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.address.val === '') {
+          this.address.isvalid = false
+          this.formvalidation = false
+        }
+        if (this.country.val === '') {
+          this.country.isvalid = false
+          this.formvalidation = false
+        }
       }
       if (this.billingmethod === 'useadifferent') {
         if (this.billinginfo.fname.val === '') {
