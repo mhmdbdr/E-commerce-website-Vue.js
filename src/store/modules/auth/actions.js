@@ -1,7 +1,7 @@
 let timer
 export default {
   async signup (context, payload) {
-    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAEiv-PrKG_3J18YdgMlBT7wiLBKgUbH6c', {
+    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyDi3O8ofYEFjkn10raFxNbnFGSbhImAp9Y', {
       method: 'POST',
       body: JSON.stringify({
         email: payload.email,
@@ -27,7 +27,7 @@ export default {
     })
   },
   async signin (context, payload) {
-    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAEiv-PrKG_3J18YdgMlBT7wiLBKgUbH6c', {
+    const response = await fetch('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyDi3O8ofYEFjkn10raFxNbnFGSbhImAp9Y', {
       method: 'POST',
       body: JSON.stringify({
         email: payload.email,

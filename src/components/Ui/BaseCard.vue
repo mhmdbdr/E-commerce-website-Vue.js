@@ -142,6 +142,9 @@ export default {
       text-align: center;
       font-weight: 700;
       font-size: 13px;
+      & > .placeholder{
+        margin: auto;
+      }
       a{
         white-space: nowrap;
         overflow: hidden;

@@ -1,7 +1,7 @@
 export default {
   async setorder (context, payload) {
     const userId = context.rootGetters['auth/userId']
-    const response = await fetch(`https://stabraq-clown-default-rtdb.firebaseio.com/orders/${userId}.json`, {
+    const response = await fetch(`https://stabraq-clone-default-rtdb.firebaseio.com/orders/${userId}.json`, {
       method: 'POST',
       body: JSON.stringify(payload)
     })
@@ -16,7 +16,7 @@ export default {
   },
   async fetchorders (context) {
     const userId = context.rootGetters['auth/userId']
-    const response = await fetch(`https://stabraq-clown-default-rtdb.firebaseio.com/orders/${userId}.json`)
+    const response = await fetch(`https://stabraq-clone-default-rtdb.firebaseio.com/orders/${userId}.json`)
     const responseData = await response.json()
 
     if (!response.ok) {

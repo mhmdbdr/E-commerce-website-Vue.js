@@ -1,6 +1,6 @@
 export default {
   async fetchData (context) {
-    const response = await fetch('https://stabraq-clown-default-rtdb.firebaseio.com/products.json')
+    const response = await fetch('https://stabraq-clone-default-rtdb.firebaseio.com/products.json')
     const responseData = await response.json()
     if (!response.ok) {
       const error = new Error(responseData.message || 'failed load products')

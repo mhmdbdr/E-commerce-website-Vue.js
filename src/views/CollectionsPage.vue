@@ -174,25 +174,9 @@ export default {
         }
       })
     }
-    // controlsbar () {
-    //   const controls = document.querySelector('.controls')
-    //   if (window.innerWidth < 1100 && this.$route.path === `/collections/${this.collectionsId}`) {
-    //     if (window.scrollY > controls.offsetTop) {
-    //       controls.classList.add('fixedcontrols')
-    //     } else {
-    //       controls.classList.remove('fixedcontrols')
-    //     }
-    //   } else {
-    //     if (this.$route.path === `/collections/${this.collectionsId}`) {
-    //       controls.classList.remove('fixedcontrols')
-    //     }
-    //   }
-    // }
   },
   created () {
     this.loadData()
-    // window.addEventListener('scroll', this.controlsbar)
-    // window.addEventListener('resize', this.controlsbar)
   },
   updated () {
     this.nodatatoggle()
@@ -214,17 +198,6 @@ export default {
       justify-content: space-between;
       align-items: center;
       margin: 40px 0 30px;
-      // &.fixedcontrols{
-      //   z-index: 0;
-      //   background-color: white;
-      //   position: fixed;
-      //   width: 100%;
-      //   left: 0px;
-      //   margin: 50px 0;
-      //   padding: 20px 40px 10px;
-      //   top: 0;
-      //   transition-duration: .3s;
-      // }
       .left,
       .right{
         display: flex;
